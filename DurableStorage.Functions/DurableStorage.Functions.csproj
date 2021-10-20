@@ -4,9 +4,12 @@
     <AzureFunctionsVersion>v3</AzureFunctionsVersion>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="Azure.Messaging.ServiceBus" Version="7.4.0" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.DurableTask" Version="2.5.1" />
     <PackageReference Include="Microsoft.Azure.WebJobs.Extensions.Storage" Version="3.0.10" />
     <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="3.0.11" />
+    <PackageReference Include="SendGrid" Version="9.24.4" />
+    <PackageReference Include="Twilio" Version="5.67.0" />
   </ItemGroup>
   <ItemGroup>
     <None Update="host.json">
@@ -16,9 +19,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>Never</CopyToPublishDirectory>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="ActivityFunctions\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DurableStorage.Models\DurableStorage.Models.csproj" />

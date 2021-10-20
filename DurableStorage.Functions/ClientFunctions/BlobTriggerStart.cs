@@ -36,7 +36,7 @@ namespace DurableStorage.Functions.ClientFunctions
                         ETag = myCloudBlob.Properties.ETag.ToString()
                     };
 
-                    var instanceId = await starter.StartNewAsync("AzureStorageNotifier_Orchestrator", newUploadedBlobItem);
+                    var instanceId = await starter.StartNewAsync("AzureStorageOrchestrator", newUploadedBlobItem);
                     log.LogInformation($"Started orchestration with ID = '{instanceId}'.");
                 }
                 else
