@@ -2,7 +2,7 @@
 
 My mini-project for small demo example about Function Chaining Example in .NET Core 3.1
 
-![Jonah Andersson Azure Durable Functions - Function Chaining Example](https://azdurablefunctionstorage.blob.core.windows.net/blogcontent/Jonahs_Example_AzureDurableFunctionsWithServiceBus.png) Jonah Andersson Azure Durable Functions - Function Chaining Example with Azure Service Bus, Twilio API, Sendgrid API and Azure BLOB Storage
+![Jonah Andersson Azure Durable Functions - Function Chaining Example](https://durablestoragefunctionss.blob.core.windows.net/photoscontainer/AzDurableFunctionChaining.jpg) Jonah Andersson Azure Durable Functions - Function Chaining Example with Azure Service Bus, Twilio API, Sendgrid API and Azure BLOB Storage
 
 C# .NET Source code logi in file ServerlessAzureStorageNotifier.cs 
 
