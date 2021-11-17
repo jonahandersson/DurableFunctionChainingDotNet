@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 namespace DurableStorage.Functions.ActivityFunctions
 {
     public static class SendMessageToServiceBusQueue
-    {
-     
+    {     
             [FunctionName("SendMessageToServiceBusQueue")]
             public static async Task<string> SendMessageToAzureServiceBusQueueAsync([ActivityTrigger] CloudBlobItem uploadedcloudBlob, ILogger log, ExecutionContext executionContext)
             {
                 log.LogInformation($"Received event data with an uploaded cloud blob {uploadedcloudBlob.Name} with format {uploadedcloudBlob.FileType}.");
+                
                 //Config settings for Azure Service Bus
                 var azureServiceBusConfig = new ConfigurationBuilder()
                      .SetBasePath(executionContext.FunctionAppDirectory)

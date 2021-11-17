@@ -30,14 +30,15 @@ namespace DurableStorage.Functions.ActivityFunctions
 
                 var apiKey = sendGridAPIConfig["SendGridAPIKey"];
                 var adminEmail = sendGridAPIConfig["Admin_Email"];
+                var adminEmailAlt = sendGridAPIConfig["Admin_Email2"];
                 var adminName = sendGridAPIConfig["Admin_Name"];
                 var client = new SendGridClient(apiKey);
                 var from = new EmailAddress(adminEmail, adminName);
 
                 List<EmailAddress> recipients = new List<EmailAddress>
                 {
-                  new EmailAddress("jonah@jonahandersson.tech", "JonahAndersson Tech"),
-                  new EmailAddress("jonah.andersson@forefront.se", "Jonah @Forefront")
+                  new EmailAddress(adminEmail, "JonahAndersson Tech Company"),
+                  new EmailAddress(adminEmailAlt, "Jonah Forefront Company")
                 };
 
                 var subject = "New BLOB Uploaded on Azure Service Bus Queue ";
