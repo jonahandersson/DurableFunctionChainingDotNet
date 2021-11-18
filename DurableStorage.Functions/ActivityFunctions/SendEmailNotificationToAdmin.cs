@@ -30,7 +30,7 @@ namespace DurableStorage.Functions.ActivityFunctions
 
                 var apiKey = sendGridAPIConfig["SendGridAPIKey"];
                 var adminEmail = sendGridAPIConfig["Admin_Email"];
-                var adminEmailAlt = sendGridAPIConfig["Admin_Email2"];
+                var adminEmailAlt = sendGridAPIConfig["Admin_EmailTwo"];
                 var adminName = sendGridAPIConfig["Admin_Name"];
                 var client = new SendGridClient(apiKey);
                 var from = new EmailAddress(adminEmail, adminName);
