@@ -37,8 +37,8 @@ namespace DurableStorage.Functions.ActivityFunctions
 
                 List<EmailAddress> recipients = new List<EmailAddress>
                 {
-                  new EmailAddress(adminEmail, "JonahAndersson Tech Company"),
-                  new EmailAddress(adminEmailAlt, "Jonah Forefront Company")
+                  new EmailAddress(adminEmail, "My Tech Company"),
+                  new EmailAddress(adminEmailAlt, "Jonah Company")
                 };
 
                 var subject = "New BLOB Uploaded on Azure Service Bus Queue ";
